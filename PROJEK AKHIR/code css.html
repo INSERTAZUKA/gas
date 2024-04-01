@@ -1,0 +1,1533 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" sizes="64x64" href="WEBICON7.jpg"><!--ICON WEBSITE-->
+        <title>CODE CSS</title>
+        <style>
+
+body{
+    transition: background-color 1s ease; /* Efek transisi selama 1 detik */
+}
+
+xmp{
+    font-family: sans-serif;
+    color: white;
+    padding: 30px;
+}
+
+.buttononlymyweb {
+    margin-left: 30px;
+    margin-top: 30px;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #38444d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px lightslategray;
+}
+
+.buttononlymyweb:hover {
+    background-color: lightslategray;
+    box-shadow: 0 9px #38444d;
+}
+
+.buttononlymyweb:active {
+  background-color: lightslategrey;
+  box-shadow: 0 5px #38444d;
+  transform: translateY(4px);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+        </style>
+    </head>
+    <body>
+
+        <button class="buttononlymyweb"><a href="Core.html">Kembali</a></button>
+
+
+        <script>
+            function getRandomColor() {
+                var letters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                var color = '#';
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+      
+            function changeBackgroundColor() {
+                document.body.style.backgroundColor = getRandomColor();
+                setTimeout(changeBackgroundColor, 200);
+            }
+      
+            changeBackgroundColor();
+        </script>
+
+    <xmp>
+
+
+        /*-- -------------------------------------------------------------------------------LAYOUT--------------------------------------------------- --*/
+        #INTIBUMI{
+         scroll-behavior: 10s smooth;
+         overflow: hidden;
+       }
+       
+       p{
+         text-align: justify;
+       }
+       
+       .LUV {
+         margin-top: 0px;
+         margin-bottom: 50px;
+         text-align: center;
+         font-family: sans-serif;
+         font-size: 3rem;
+         letter-spacing: 0.15rem;
+         text-transform: uppercase;
+         color: #fff;
+         text-shadow: -4px 4px #ef3550,
+                      -8px 8px #f48fb1,
+                      -12px 12px #7e57c2,
+                      -16px 16px #2196f3,
+                      -20px 20px #26c6da,
+                      -24px 24px #43a047,
+                      -28px 28px #eeff41,
+                      -32px 32px #f9a825,
+                      -36px 36px #ff5722;
+       }
+       
+       
+        body {
+         font-family: Arial, Helvetica, sans-serif;
+         /* animation: kontol 15s infinite; */
+         transition: background-color 1s ease; /* Efek transisi selama 1 detik */
+       }
+       
+       /* @keyframes kontol  {
+         0%   {background-color:red;}
+         10%   {background-color:orangered;}
+         15%   {background-color:orange;}
+         20%   {background-color:yellow;}
+         25%   {background-color:greenyellow;}
+         30%   {background-color:yellowgreen;}
+         35%   {background-color:green;}
+         40%   {background-color:lightgreen;}
+         45%   {background-color:lightblue;}
+         50%   {background-color:lightskyblue;}
+         55%   {background-color:lightseagreen;}
+         60%   {background-color:blue;}
+         65%   {background-color:darkblue;}
+         70%   {background-color:darkslateblue;}
+         75%   {background-color:darkmagenta;}
+         80%   {background-color:darkorchid;}
+         85%   {background-color:darkviolet;}
+         90%   {background-color:violet;}
+         95%   {background-color:lightpink;}
+         96%   {background-color:lightcoral;}
+         97%   {background-color:orange;}
+         98%   {background-color:orangered;}
+         100%   {background-color:red;}
+       } */
+       
+        * {
+         box-sizing: border-box;
+       }
+       
+       body {
+         font-family: Arial;
+         padding: 10px;
+       }
+       
+       .header {
+         padding: 20px;
+         text-align: center;
+         background-image: url(PP12.jpg);
+       }
+       
+       .header h1 {
+         font-size: 50px;
+       }
+       
+       .leftcolumn {   
+         float: left;
+         width: 75%;
+       }
+       
+       .rightcolumn {
+         float: left;
+         width: 25%;
+         padding-left: 20px;
+       }
+       
+       .fakeimg {
+         background-color: #38444d;
+         width: auto;
+         padding: 20px;
+         width: 100%;
+         border-radius: 10px;
+       }
+       
+       .fakeimgzoo {
+         background-color: #38444d;
+         width: auto;
+         padding: 20px;
+         border-radius: 10px;
+       }
+       
+       .fakeimgfi {
+         background-color: #38444d;
+         width: auto;
+         padding: 20px;
+         border-radius: 10px;
+       }
+       
+       .fakeimgvid {
+         background-color: #38444d;
+         width: auto;
+         padding: 100px;
+         width: 100%;
+         border-radius: 10px;
+       }
+       
+       video.vid{
+         height: 100%;
+         width: 100%;
+         border-radius: 10px;
+       }
+       
+       .fakeimgs {
+         background-color: #38444d;
+         width: 100%;
+         padding: 20px;
+         border-radius: 10px;
+       }
+       
+       .fakeimgpp {
+         background-color: #38444d;
+         padding: 20px;
+         width: 100%;
+         border-radius: 10px;
+       }
+       
+       .card {
+         background-color: white;
+         padding: 20px;
+         margin-top: 20px;
+       }
+       
+       .cardzoo {
+         background-color: white;
+         padding: 20px;
+         margin-top: 20px;
+       }
+       
+       .cardfi {
+         background-color: white;
+         padding: 20px;
+         margin-top: 20px;
+         width: 100%;
+       }
+       
+       .cardhori {
+         background-color: white;
+         padding: 30px;
+         margin-top: 20px;
+         width: 100%;
+         height: 100%;
+       }
+       
+       img.imghori{
+         height: 100%;
+         width: 100%;
+       }
+       
+       img.bol{
+         height: 100%;
+         width: 100%;
+       }
+       
+       img.Albert{
+         height: 100%;
+         width: 100%;
+       }
+       
+       .cardpro {
+         background-color: white;
+         padding: 20px;
+         margin-top: 20px;
+       }
+       
+       .cardpp {
+         background-color: white;
+         padding: 20px;
+         margin-top: 20px;
+         text-align: center;
+         width: auto;
+       }
+       
+       .cardvid {
+         background-color: white;
+         padding: 20px;
+         margin-top: 20px;
+         text-align: center;
+       }
+       
+       .cards {
+         background-color: white;
+         padding: 20px;  
+         margin-top: 20px;
+         text-align: center;
+       }
+       
+       p.text{
+         text-align: left;
+       }
+       
+       h1.text{
+         text-align: left;
+       }
+       
+       h5.text{
+         padding-top: 100px;
+         text-align: left;
+       }
+       
+       .row::after {
+         content: "";
+         display: table;
+         clear: both;
+       }
+       
+       @media screen and (max-width: 800px) {
+         .leftcolumn, .rightcolumn {   
+           width: 100%;
+           padding: 0;
+         }
+       }
+       
+       @media screen and (max-width: 400px) {
+         .topnav a {
+           float: none;
+           width: 100%;
+         }
+       }
+       
+       /*-- -------------------------------------------------------------------------------RGB--------------------------------------------------- --*/
+          .di1{
+           width:auto;
+           height:auto;
+           padding: 10px;
+           color: white;
+           }
+         
+           a.color:hover {
+             color: white;
+           }
+           
+           a.color{
+             text-decoration: none;
+             font-size: 20px;
+             color: white;
+           }
+           
+           a.color:link, a.color:visited {
+             background-color: red;
+             border: 2px solid white;
+             padding: 10px 20px;
+             text-align: center;
+             text-decoration: none;
+             display: inline-block;
+           }
+           
+           a.color:hover, a.color:active {
+             background-color: white;
+             color: red;
+           }
+       
+           @media screen and (max-width: 800px) {
+             .leftcolumn, .rightcolumn {   
+               width: 100%;
+               padding: 0;
+             }
+           }
+           
+           @media screen and (max-width: 400px) {
+             .topnav a {
+               float: none;
+               width: 100%;
+             }
+           }
+       
+       /*-- -------------------------------------------------------------------------------DROPDOWN BUTTON--------------------------------------------------- --*/
+       .dropdownlist {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: #38444d;
+       }
+       
+       li {
+         float: left;
+       }
+       
+       li a, .dropbtn {
+         display: inline-block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         cursor: pointer;
+       }
+       
+       li a:hover, .dropdown:hover .dropbtn {
+         background-color: lightslategrey;
+       }
+       
+       li.dropdown {
+         display: inline-block;
+       }
+       
+       .dropdown-content {
+         display: none;
+         position: absolute;
+         background-color: #38444d;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         z-index: 1;
+       }
+       
+       .dropdown-content a {
+         color: white;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+         text-align: left;
+       }
+       
+       .dropdown-content a:hover {background-color: lightslategrey;}
+       
+       .dropdown:hover .dropdown-content {
+         display: block;
+       }
+       
+       @media screen and (max-width: 800px) {
+         .leftcolumn, .rightcolumn {   
+           width: 100%;
+           padding: 0;
+         }
+       }
+       
+       @media screen and (max-width: 400px) {
+         .topnav a {
+           float: none;
+           width: 100%;
+         }
+       }
+        /*-- -------------------------------------------------------------------------------IMAGE GALERY--------------------------------------------------- --*/
+       
+       @keyframes shake {
+         0% { transform: translate(1px, 1px) rotate(0deg); }
+         10% { transform: translate(-1px, -2px) rotate(-3deg); }
+         20% { transform: translate(-3px, 0px) rotate(3deg); }
+         30% { transform: translate(3px, 2px) rotate(0deg); }
+         40% { transform: translate(1px, -1px) rotate(3deg); }
+         50% { transform: translate(-1px, 2px) rotate(-3deg); }
+         60% { transform: translate(-3px, 1px) rotate(0deg); }
+         70% { transform: translate(3px, 1px) rotate(-3deg); }
+         80% { transform: translate(-1px, -1px) rotate(3deg); }
+         90% { transform: translate(1px, 2px) rotate(0deg); }
+         100% { transform: translate(1px, -2px) rotate(-3deg); }
+       } 
+       
+       div.gallery img {
+         width: 100%;
+         height: auto;
+       }
+       
+       div.desc {
+         padding: 15px;
+       }
+       
+       * {
+         box-sizing: border-box;
+       }
+       
+       .responsive {
+         padding: 0 6px;
+         float: bottom;
+         width: 24.99999%;
+       }
+       
+       @media screen and (max-width: 800px) {
+         .leftcolumn, .rightcolumn {   
+           width: 100%;
+           padding: 0;
+         }
+       }
+       
+       @media screen and (max-width: 400px) {
+         .topnav a {
+           float: none;
+           width: 100%;
+         }
+       }
+       
+       .clearfix:after {
+         content: "";
+         display: table;
+         clear: both;
+       }
+       
+        /*-- -------------------------------------------------------------------------------KURSOR--------------------------------------------------- --*/
+       .auto            { cursor: auto; }
+       .default         { cursor: default; }
+       .none            { cursor: none; }
+       .context-menu    { cursor: context-menu; }
+       .help            { cursor: help; }
+       .pointer         { cursor: pointer; }
+       .progress        { cursor: progress; }
+       .wait            { cursor: wait; }
+       .cell            { cursor: cell; }
+       .crosshair       { cursor: crosshair; }
+       .text            { cursor: text; }
+       .vertical-text   { cursor: vertical-text; }
+       .alias           { cursor: alias; }
+       .copy            { cursor: copy; }
+       .move            { cursor: move; }
+       .no-drop         { cursor: no-drop; }
+       .not-allowed     { cursor: not-allowed; }
+       .all-scroll      { cursor: all-scroll; }
+       .col-resize      { cursor: col-resize; }
+       .row-resize      { cursor: row-resize; }
+       .n-resize        { cursor: n-resize; }
+       .e-resize        { cursor: e-resize; }
+       .s-resize        { cursor: s-resize; }
+       .w-resize        { cursor: w-resize; }
+       .ns-resize       { cursor: ns-resize; }
+       .ew-resize       { cursor: ew-resize; }
+       .ne-resize       { cursor: ne-resize; }
+       .nw-resize       { cursor: nw-resize; }
+       .se-resize       { cursor: se-resize; }
+       .sw-resize       { cursor: sw-resize; }
+       .nesw-resize     { cursor: nesw-resize; }
+       .nwse-resize     { cursor: nwse-resize; }
+       .zoom-in         { cursor: zoom-in; }
+       .zoom-out        { cursor: zoom-out; }
+       
+       .cursors {
+         display: flex;
+         flex-wrap: wrap;
+       }
+       
+       
+       .cursors > div{
+           flex: 300px;
+           background-color: lightslategrey;
+           border: 5px solid white;
+           padding: 1rem;
+           margin-bottom: 1rem;
+           margin: 0 5px 5px 0;
+        }
+       
+       @media screen and (max-width: 800px) {
+         .leftcolumn, .rightcolumn {   
+           width: 100%;
+           padding: 0;
+         }
+       }
+       
+       @media screen and (max-width: 400px) {
+         .topnav a {
+           float: none;
+           width: 100%;
+         }
+       }
+       
+       /*-- -------------------------------------------------------------------------------PROFILE CARD--------------------------------------------------- --*/
+       .cardprofile {
+         box-shadow: 0 4px 8px 0 white;
+         max-width: 300px;
+         margin: auto;
+         text-align: center;
+       }
+       
+       .titlepro {
+         color: grey;
+         font-size: 18px;
+       }
+       
+       .pppppppp {
+         border: none;
+         outline: 0;
+         display: inline-block;
+         padding: 8px;
+         color: white;
+         background-color: #000;
+         text-align: center;
+         cursor: pointer;
+         width: 100%;
+         font-size: 18px;
+       }
+       
+       a {
+         text-decoration: none;
+         font-size: 22px;
+         color: black;
+       }
+       
+       .pppppppp:hover, a:hover {
+         opacity: 0.7;
+       }
+       
+       @media screen and (max-width: 800px) {
+         .leftcolumn, .rightcolumn {   
+           width: 100%;
+           padding: 0;
+         }
+       }
+       
+       @media screen and (max-width: 400px) {
+         .topnav a {
+           float: none;
+           width: 100%;
+         }
+       }
+       
+       /*-- -------------------------------------------------------------------------------OPEN SIDEBAR--------------------------------------------------- --*/
+       .sidenavtetet {
+         height: 100%;
+         width: 0;
+         position: fixed;
+         z-index: 1;
+         top: 0;
+         left: 0;
+         background-color: #38444d;
+         overflow-x: hidden;
+         transition: 0.5s;
+         padding-top: 60px;
+       }
+       
+       .sidenavtetet a {
+         padding: 8px 8px 8px 32px;
+         line-height: 40px;
+         text-decoration: none;
+         font-size: 25px;
+         color: white;
+         display: block;
+         transition: 0.3s;
+       }
+       
+       .sidenavtetet a:hover {
+         color: black;
+         background-color: lightslategray;
+       }
+       
+       .sidenavtetet .closebtn {
+         position: absolute;
+         top: 0;
+         right: 25px;
+         font-size: 36px;
+         margin-left: 50px;
+       }
+       
+       #mainnew {
+         transition: margin-left .5s;
+       }
+       
+       @media screen and (max-height: 450px) {
+         .sidenavtetet {padding-top: 15px;}
+         .sidenavtetet a {font-size: 18px;}
+       }
+       /*-- -------------------------------------------------------------------------------IMAGE POP UP--------------------------------------------------- --*/
+       #myImg {
+         cursor: pointer;
+         transition: 0.3s;
+         width: 100%;
+         height: 100%;
+       }
+       
+       #myImg:hover {opacity: 0.7;}
+       
+       /* The Modal (background) */
+       .modal {
+         display: none; /* Hidden by default */
+         position: fixed; /* Stay in place */
+         z-index: 1; /* Sit on top */
+         padding-top: 100px; /* Location of the box */
+         left: 0;
+         top: 0;
+         width: 100%; /* Full width */
+         height: 100%; /* Full height */
+         background-color: rgb(0,0,0); /* Fallback color */
+         background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+       }
+       
+       /* Modal Content (image) */
+       .modal-content {
+         margin: auto;
+         display: block;
+         width: 80%;
+         max-width: 700px;
+       }
+       
+       /* Caption of Modal Image */
+       #caption {
+         margin: auto;
+         display: block;
+         width: 80%;
+         max-width: 700px;
+         text-align: center;
+         color: #ccc;
+         padding: 10px 0;
+         height: 150px;
+       }
+       
+       /* Add Animation */
+       .modal-content, #caption {  
+         -webkit-animation-name: zoom;
+         -webkit-animation-duration: 0.6s;
+         animation-name: zoom;
+         animation-duration: 0.6s;
+       }
+       
+       @-webkit-keyframes zoom {
+         from {-webkit-transform:scale(0)} 
+         to {-webkit-transform:scale(1)}
+       }
+       
+       @keyframes zoom {
+         from {transform:scale(0)} 
+         to {transform:scale(1)}
+       }
+       
+       /* The Close Button */
+       .close {
+         position: absolute;
+         top: 15px;
+         right: 35px;
+         color: #f1f1f1;
+         font-size: 40px;
+         font-weight: bold;
+         transition: 0.3s;
+       }
+       
+       .close:hover,
+       .close:focus {
+         color: #bbb;
+         text-decoration: none;
+         cursor: pointer;
+       }
+       
+       /* 100% Image Width on Smaller Screens */
+       @media only screen and (max-width: 700px){
+         .modal-content {
+           width: 100%;
+         }
+       }
+       
+       /*-- -------------------------------------------------------------------------------ICON ICON--------------------------------------------------- --*/
+       .fa {
+         padding: 5px;
+         font-size: 30px;
+         width: 60px;
+         text-decoration: none;
+        }
+       
+       .fa:hover {
+           opacity: 0.7;
+       }
+       
+       .fa-facebook {
+         background: #3B5998;
+         color: white;
+       }
+       
+       .fa-twitter {
+         background: #55ACEE;
+         color: white;
+       }
+       
+       .fa-google {
+         background: #dd4b39;
+         color: white;
+       }
+       
+       .fa-linkedin {
+         background: #007bb5;
+         color: white;
+       }
+       
+       .fa-youtube {
+         background: #bb0000;
+         color: white;
+       }
+       
+       .fa-instagram {
+         background: #125688;
+         color: white;
+       }
+       
+       .fa-pinterest {
+         background: #cb2027;
+         color: white;
+       }
+       
+       .fa-snapchat-ghost {
+         background: #fffc00;
+         color: white;
+         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+       }
+       
+       .fa-skype {
+         background: #00aff0;
+         color: white;
+       }
+       
+       .fa-android {
+         background: #a4c639;
+         color: white;
+       }
+       
+       .fa-dribbble {
+         background: #ea4c89;
+         color: white;
+       }
+       
+       .fa-vimeo {
+         background: #45bbff;
+         color: white;
+       }
+       
+       .fa-tumblr {
+         background: #2c4762;
+         color: white;
+       }
+       
+       .fa-vine {
+         background: #00b489;
+         color: white;
+       }
+       
+       .fa-foursquare {
+         background: #45bbff;
+         color: white;
+       }
+       
+       .fa-stumbleupon {
+         background: #eb4924;
+         color: white;
+       }
+       
+       .fa-flickr {
+         background: #f40083;
+         color: white;
+       }
+       
+       .fa-yahoo {
+         background: #430297;
+         color: white;
+       }
+       
+       .fa-soundcloud {
+         background: #ff5500;
+         color: white;
+       }
+       
+       .fa-reddit {
+         background: #ff5700;
+         color: white;
+       }
+       
+       .fa-rss {
+         background: #ff6600;
+         color: white;
+       }
+       
+       /*-- -------------------------------------------------------------------------------BACK TO TOP--------------------------------------------------- --*/
+       #myBtnaaa {
+         display: none;
+         position: fixed;
+         bottom: 20px;
+         right: 30px;
+         z-index: 1;
+         font-size: 18px;
+         border: none;
+         outline: none;
+         background-color: #38444d;
+         color: white;
+         cursor: pointer;
+         padding: 15px;
+         border-radius: 4px;
+       }
+       
+       #myBtnaaa:hover {
+         background-color: #38444d;
+       }
+       
+       /*-- -------------------------------------------------------------------------------LOGIN--------------------------------------------------- --*/
+       /* Style all input fields */
+       input {
+         width: 100%;
+         padding: 12px;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+         box-sizing: border-box;
+         margin-top: 6px;
+         margin-bottom: 16px;
+       }
+       
+       /* Style the submit button */
+       input[type=submit] {
+         background-color: #38444d;
+         color: white;
+       }
+       
+       /* Style the containers3 for inputs */
+       .containers3 {
+         background-color: #f1f1f1;
+         padding: 20px;
+       }
+       
+       /* The messages3 box is shown when the user clicks on the password field */
+       #messages3 {
+         display:none;
+         background: #f1f1f1;
+         color: #000;
+         position: relative;
+         padding: 20px;
+         margin-top: 10px;
+       }
+       
+       #messages3 p {
+         padding: 10px 35px;
+         font-size: 18px;
+       }
+       
+       /* Add a green text color and a checkmark when the requirements are right */
+       .valids2 {
+         color: #38444d;
+       }
+       
+       .valids2:before {
+         position: relative;
+         left: -35px;
+         content: "✔";
+       }
+       
+       /* Add a red text color and an "x" when the requirements are wrong */
+       .invalids2s1 {
+         color: red;
+       }
+       
+       .invalids2s1:before {
+         position: relative;
+         left: -35px;
+         content: "✖";
+       }
+       
+       /*-- -------------------------------------------------------------------------------MY SKILL--------------------------------------------------- --*/
+       * {box-sizing: border-box}
+       
+       .containerq1 {
+         width: 100%;
+         background-color: #ddd;
+       }
+       
+       p.sk{
+         color: white;
+       }
+       
+       .skillsq2 {
+         text-align: right;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         color: black;
+       }
+       
+       .html {width: 40%; background-color: #04AA6D;}
+       .css {width: 30%; background-color: #2196F3;}
+       .js {width: 5%; background-color: #f44336;}
+       .php {width: 0%; background-color: #808080;}
+       
+       /*-- -------------------------------------------------------------------------------MODAL POP UP--------------------------------------------------- --*/
+       /* The Modalcabgb (background) */
+       .modalcabgb {
+         display: none; /* Hidden by default */
+         position: fixed; /* Stay in place */
+         z-index: 1; /* Sit on top */
+         padding-top: 100px; /* Location of the box */
+         left: 0;
+         top: 0;
+         width: 100%; /* Full width */
+         height: 100%; /* Full height */
+         overflow: auto; /* Enable scroll if needed */
+         background-color: rgb(0,0,0); /* Fallback color */
+         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+       }
+       
+       /* Modalcabgb Content */
+       .modalcabgb-content {
+         position: relative;
+         background-color: #fefefe;
+         margin: auto;
+         padding: 0;
+         border: 1px solid black;
+         width: 80%;
+         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+         -webkit-animation-name: animatetopvc;
+         -webkit-animation-duration: 0.4s;
+         animation-name: animatetopvc;
+         animation-duration: 0.4s
+       }
+       
+       button.costumbtn{
+         background-color: #38444d;
+       }
+       
+       /* Add Animation */
+       @-webkit-keyframes animatetopvc {
+         from {top:-300px; opacity:0} 
+         to {top:0; opacity:1}
+       }
+       
+       @keyframes animatetopvc {
+         from {top:-300px; opacity:0}
+         to {top:0; opacity:1}
+       }
+       
+       /* The Closegg Button */
+       .closegg {
+         color: white;
+         float: right;
+         font-size: 28px;
+         font-weight: bold;
+       }
+       
+       .closegg:hover,
+       .closegg:focus {
+         color: #000;
+         text-decoration: none;
+         cursor: pointer;
+       }
+       
+       .modalcabgb-header {
+         padding: 2px 16px;
+         background-color: #38444d;
+         color: white;
+       }
+       
+       .modalcabgb-body {padding: 2px 16px;}
+       
+       .modalcabgb-footer {
+         padding: 2px 16px;
+         background-color: #38444d;
+         color: white;
+       }
+       
+       /*-- -------------------------------------------------------------------------------COLAPSIBLE--------------------------------------------------- --*/
+       .collapsiblemm {
+         background-color: #777;
+         color: white;
+         cursor: pointer;
+         padding: 18px;
+         width: 100%;
+         border: none;
+         text-align: left;
+         outline: none;
+         font-size: 15px;
+       }
+       
+       .activelol, .collapsiblemm:hover {
+         background-color: #555;
+       }
+       
+       .contentcxc {
+         padding: 0 18px;
+         display: none;
+         overflow: hidden;
+         background-color: #f1f1f1;
+       }
+       
+         p.bold{
+           font-weight: bolder;
+           font-family: verdana;
+           color: black;
+         }
+       
+       button#warna{
+         color: white;
+       }
+       
+       /*-- -------------------------------------------------------------------------------PARFUM--------------------------------------------------- --*/
+       .couponpf {
+         border-style: groove;
+         background-color: black;
+         border-color: #38444d;
+         border-width: 2px;
+         width: 80%;
+         margin: 0 auto;
+         max-width: 600px;
+       }
+       
+       .containerpf {
+         padding: 2px 16px;
+         background-color: #f1f1f1;
+       }
+       
+       .promopf {
+         background: #ccc;
+         padding: 3px;
+       }
+       
+       .expirepf {
+         color: red;
+       }
+       
+       /*-- -------------------------------------------------------------------------------FLIP CARD--------------------------------------------------- --*/
+       .flip-card {
+         background-color: transparent;
+         width: 300px;
+         height: 300px;
+         perspective: 1000px;
+         margin: auto;
+         text-align: center;
+       }
+       
+       .flip-card-inner {
+         position: relative;
+         width: 100%;
+         height: 100%;
+         text-align: center;
+         transition: transform 0.6s;
+         transform-style: preserve-3d;
+         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+       }
+       
+       .flip-card:hover .flip-card-inner {
+         transform: rotateY(180deg);
+       }
+       
+       .flip-card-front, .flip-card-back {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         -webkit-backface-visibility: hidden;
+         backface-visibility: hidden;
+       }
+       
+       .flip-card-front {
+         background-color: #bbb;
+         color: black;
+       }
+       
+       .flip-card-back {
+         background-color: white;
+         color: black;
+         transform: rotateY(180deg);
+         font-family: sans-serif;
+       }
+       
+       /*-- -------------------------------------------------------------------------------ALERT BUTTON--------------------------------------------------- --*/
+       
+       .blur {
+         display:block;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         z-index: 2;
+       }
+       
+       .callout {
+         position: fixed;
+         right: 550px;
+         bottom: 160px;
+         max-width: 3000px;
+         z-index: 3;
+       }
+       
+       .callout-header {
+         padding: 25px;
+         background: #555;
+         font-size: 30px;
+         color: white;
+         text-align: center;
+       }
+       
+       .callout-container {
+         padding: 10px;
+         background-color: white;
+         color: black;
+         width: 500px;
+         height: 400px;
+       }
+       
+       .closebtnBARU {
+         position: absolute;
+         top: 5px;
+         right: 15px;
+         color: white;
+         font-size: 30px;
+         cursor: pointer;
+       }
+       
+       .closebtnBARU:hover {
+         color: red;
+       }
+       
+       /*-- -------------------------------------------------------------------------------ARROW--------------------------------------------------- --*/
+       .arrow {
+         border: solid white;
+         border-width: 0 3px 3px 0;
+         display: inline-block;
+         padding: 3px;
+       }
+       
+       .right {
+         transform: rotate(-45deg);
+         -webkit-transform: rotate(-45deg);
+       }
+       
+       .left {
+         transform: rotate(135deg);
+         -webkit-transform: rotate(135deg);
+       }
+       
+       .up {
+         transform: rotate(-135deg);
+         -webkit-transform: rotate(-135deg);
+       }
+       
+       .down {
+         transform: rotate(45deg);
+         -webkit-transform: rotate(45deg);
+         float: right;
+       }
+       
+       /*-- -------------------------------------------------------------------------------COSTUM SCROLLBAR--------------------------------------------------- --*/
+       /* width */
+       ::-webkit-scrollbar {
+         width: 20px;
+       }
+       
+       /* Track */
+       ::-webkit-scrollbar-track {
+         background-color:  #38444d; 
+         border-radius: 0px;
+       }
+       
+       /* Track on hover */
+       ::-webkit-scrollbar-track:hover {
+         background-color:  white; 
+       }
+        
+       /* Handle */
+       ::-webkit-scrollbar-thumb {
+         background: white;  
+       }
+       
+       /* Handle on hover */
+       ::-webkit-scrollbar-thumb:hover {
+         background: #38444d; 
+       }
+       
+       /*-- -------------------------------------------------------------------------------COSTUM SELECTION--------------------------------------------------- --*/
+       ::-moz-selection { /* Code for Firefox */
+         color: red;
+         background: black;
+       }
+       
+             ::selection {
+               color: red;
+               background: black;
+             }
+       
+       /*-- -------------------------------------------------------------------------------CONTENTEDITABLE--------------------------------------------------- --*/
+       [contenteditable] {
+         outline: 0px solid transparent;
+       }
+       
+       /*-- -------------------------------------------------------------------------------SLIDE SHOW TEXT--------------------------------------------------- --*/
+       * {box-sizing: border-box}
+       
+       /* Slideshow container */
+       .slideshow-containerDICK {
+         position: relative;
+         background: white;
+       }
+       
+       /* Slides */
+       .mySlideslols {
+         display: none;
+         padding: 80px;
+         text-align: center;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+       
+       /* Nextnew & prevnewious buttons */
+       .prevnew, .nextnew {
+         cursor: pointer;
+         position: absolute;
+         top: 50%;
+         width: auto;
+         margin-top: -30px;
+         padding: 16px;
+         color: #38444d;
+         font-weight: bold;
+         font-size: 20px;
+         border-radius: 0 3px 3px 0;
+         user-select: none;
+       } 
+       
+       /* Position the "nextnew button" to the right */
+       .nextnew {
+         position: absolute;
+         right: 0;
+         border-radius: 3px 0 0 3px;
+       }
+       
+       /* On hover, add a black background color with a little bit see-through */
+       .prevnew:hover, .nextnew:hover {
+         background-color: rgba(0,0,0,0.8);
+         color: white;
+       }
+       
+       /* The dotpkks/bullet/indicator container */
+       .dotpkks-containernew {
+           text-align: center;
+           padding: 20px;
+           background: lightslategray;
+       }
+       
+       /* The dotpkkss/bullets/indicators */
+       .dotpkks {
+         cursor: pointer;
+         height: 15px;
+         width: 15px;
+         margin: 0 2px;
+         background-color: #38444d;
+         border-radius: 50%;
+         display: inline-block;
+         transition: background-color 0.6s ease;
+       }
+       
+       /* Add a background color to the activekonci dotpkks/circle */
+       .activekonci, .dotpkks:hover {
+         background-color: white;
+       }
+       
+       /* Add an italic font style to all quotes */
+       q {font-style: italic;}
+       
+       /* Add a blue color to the author */
+       .author {color: red;}
+       
+       /*-- -------------------------------------------------------------------------------FOOTER--------------------------------------------------- --*/
+       @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Rubik:wght@400;500;700&display=swap");
+       
+       :root {
+         --light: #ffffff;
+         --dark: #000;
+       }
+       
+       .newsletter_title {
+         font-family: "Noto Serif Display", serif;
+         font-size: 2.3rem;
+         font-weight: 300;
+         text-align: left;
+       }
+       .nbmv {
+         text-decoration: none;
+           color: var(--dark);
+         font-weight: 400;
+         transition: 0.3s ease-in;
+         border-bottom: 1px solid transparent;
+         margin-bottom: 0.5rem;
+         display: inline-flex;
+       }
+       .nbmv:hover {
+         border-bottom: 1px solid var(--dark);
+       }
+       #memel {
+         list-style-type: none;
+       }
+       
+       .flex {
+         display: flex;
+       }
+       
+       .footer_video {
+         position: absolute;
+         top: 0;
+         left: 0;
+         object-fit: cover;
+         width: 100%;
+         height: 100%;
+         z-index: -1;
+         overflow: hidden;
+         border: none;
+       }
+       
+       .forzone{
+         background-color: red;
+       }
+       
+       .footer_inner {
+         background: var(--light);
+         backdrop-filter: blur(50px);
+         border: 0.1px solid rgba(233, 232, 232, 0.208);
+         padding: 2rem;
+       }
+       
+       .footer {
+         position: relative;
+         display: flex;
+         align-items: center;
+       }
+       
+       .containerppllkkoo {
+         width: 100%;
+       }
+       
+       .dedi {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         width: 220px;
+         border-bottom: 1px solid var(--dark);
+       }
+       
+       .hentai {
+         padding: 0.75rem 0;
+         border: none;
+         background: none;
+         font-weight: 500;
+         transition: border 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+         border-radius: 0;
+         width: 100%;
+         font-size: 1.05rem;
+         font-weight: bolder;
+       }
+       .hentai:focus {
+         outline: none;
+       }
+       .hentai::placeholder {
+         color: var(--dark);
+       }
+       @media (min-width: 675px) {
+         .layoutccvvee {
+           display: flex;
+           flex-wrap: nowrap;
+           column-gap: 2rem;
+         }
+         .w-50 {
+           width: 50%;
+         }
+         .w-25 {
+           width: 25%;
+         }
+       }
+       .dedi {
+         position: relative;
+       }
+       
+       .c-2 {
+         margin-top: 3.5rem;
+       }
+       .footer_copyright {
+         color: var(--light);
+       }
+       
+       /*-- -------------------------------------------------------------------------------FOOTER--------------------------------------------------- --*/
+       .luck{
+         display: inline-block;
+             background: #e8f442;
+             color: green;
+             width: 240px;
+             height: 50px;
+             border-radius: 5px;
+             border: thin solid #888;
+             box-shadow: 1px 1px 1px grey;
+             white-space: nowrap;
+             font-size: 16px;
+             font-weight: normal;
+             font-family: 'Roboto', sans-serif;
+       }
+       
+       .parent {
+         padding-top: 70px;
+         padding-bottom: 40px;
+         display: grid;
+         place-items: center;
+       }
+       
+       /*-- -------------------------------------------------------------------------DAFTAR ISI--------------------------------------------- */
+       .daftarisii {
+         list-style-type: none;
+         padding: 15px;
+         background-color: #38444d;
+         border-radius: 10px;
+       }
+       
+       .daftarisis {
+         color: black;
+       }
+       
+       .daftarisi {
+         text-decoration: none;
+         color: white;
+         cursor: pointer;
+         transition: color 100s ease; /* Transisi warna pada hover */
+       }
+       
+       .daftarisi:hover {
+       text-transform: uppercase;  
+       text-decoration: underline;
+       background-color: #38444d;
+       }
+       
+       /*-- ------------------------------------------------------------------------BUNDIR--------------------------------------------- */
+       .bundir{
+       padding-left: 45px;
+       padding-top: 40px;
+       padding-bottom: 40px;
+       }
+       
+       .buttonbundir {
+         padding: 15px 25px;
+         font-size: 24px;
+         text-align: center;
+         cursor: pointer;
+         outline: none;
+         color: white ;
+         background-color: red;
+         border: none;
+         border-radius: 15px;
+         box-shadow: 0 9px black;
+       }
+       
+       .buttonbundir:hover {
+         background-color: black;
+         box-shadow: 0 9px red;
+       }
+       
+       .buttonbundir:active {
+         background-color: red;
+         box-shadow: 0 5px black;
+         transform: translateY(4px);
+       }
+
+    </xmp>
+</body>
+</html>

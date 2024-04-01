@@ -1,0 +1,665 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" sizes="64x64" href="WEBICON7.jpg"><!--ICON WEBSITE-->
+        <title>CODE HTML</title>
+        <style>
+
+body{
+    transition: background-color 1s ease; /* Efek transisi selama 1 detik */
+}
+
+xmp{
+    font-family: sans-serif;
+    color: white;
+    padding: 30px;
+}
+
+.buttononlymyweb {
+    margin-left: 30px;
+    margin-top: 30px;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #38444d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px lightslategray;
+}
+
+.buttononlymyweb:hover {
+    background-color: lightslategray;
+    box-shadow: 0 9px #38444d;
+}
+
+.buttononlymyweb:active {
+  background-color: lightslategrey;
+  box-shadow: 0 5px #38444d;
+  transform: translateY(4px);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+        </style>
+    </head>
+    <body>
+
+        <button class="buttononlymyweb"><a href="Core.html">Kembali</a></button>
+
+
+        <script>
+            function getRandomColor() {
+                var letters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                var color = '#';
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+      
+            function changeBackgroundColor() {
+                document.body.style.backgroundColor = getRandomColor();
+                setTimeout(changeBackgroundColor, 200);
+            }
+      
+            changeBackgroundColor();
+        </script>
+
+    <xmp>
+
+
+        <!DOCTYPE html>
+        <html id="INTIBUMI">
+        <head>
+          <link rel="stylesheet" href="Core.CSS">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--ICON-->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--SMOOTH SCROLL-->
+          <link rel="icon" type="image/png" sizes="64x64" href="WEBICON7.jpg"><!--ICON WEBSITE-->
+          <title>PROJEK AKHIR</title>
+          </head>
+        
+          <body>
+            <!-- ----------------------------------RGB------------------------------------------------- -->
+            <script>
+              function getRandomColor() {
+                  var letters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                  var color = '#';
+                  for (var i = 0; i < 6; i++) {
+                      color += letters[Math.floor(Math.random() * 16)];
+                  }
+                  return color;
+              }
+        
+              function changeBackgroundColor() {
+                  document.body.style.backgroundColor = getRandomColor();
+                  setTimeout(changeBackgroundColor, 200);
+              }
+        
+              changeBackgroundColor();
+          </script>
+          
+        <!-- -------------------------------------------------------------------------SMOOTH SCROOL--------------------------------------------------------------- -->
+        <script>
+          $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+          
+              // Make sure this.hash has a value before overriding default behavior
+              if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+          
+                // Store hash
+                var hash = this.hash;
+          
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 2000, function(){
+             
+                  // Add hash (#) to URL when done scrolling (default click behavior)
+                  window.location.hash = hash;
+                });
+              } // End if
+            });
+          });
+          </script>
+          
+          <div id="mainnew">
+            <div class="contentasdasdsadasda">
+              <div class="sdada" id="section1">
+                <a style="display: block;" href="#section2"></a>
+              </div>  
+              
+            <!-- -------------------------------------------------------------------------CALL OUT--------------------------------------------------------------- -->
+            
+            <div id="ilangkau" style="backdrop-filter: blur(20px);" class="blur"></div>
+            <div id="babiii" class="callout">
+              <div class="callout-header">بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ</div>
+              <span class="closebtnBARU" onclick="memanggilDuaElemen()">×</span>
+              <div class="callout-container">
+                <p style="text-align: center;">Seadanya "AJA" Pak yang penting DONE :)</p>
+                <video class="vid" control loop muted autoplay poster width="100%" height="100%">
+                  <source src="VID11.mkv" type="video/mp4">
+                 </video>
+            
+            <script>
+            function memanggilDuaElemen() {
+              // Mengambil dua elemen dengan ID
+              var ilangkau = document.getElementById('ilangkau');
+              var babiii = document.getElementById('babiii');
+              var INTIBUMI = document.getElementById('INTIBUMI');
+              
+              // Melakukan sesuatu dengan elemen 
+              ilangkau.style.display='none';
+              babiii.style.display='none';
+              INTIBUMI.style.overflow='visible';
+            }
+            
+            </script>
+            
+              </div>
+            </div>
+            
+            <!-- -------------------------------------------------------------------------BACK TO TOP--------------------------------------------------------------- -->
+            
+            <div class="sdada" id="section2">
+            <button onclick="topFunction()" id="myBtnaaa" title="Go to top"><a style="display: block; color: white;" href="#section1" >UP</a></button>
+            </div>
+            
+               <script>
+                 let mybutton = document.getElementById("myBtnaaa");
+                 window.onscroll = function() {scrollFunction()};
+                 function scrollFunction() {
+                   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                     mybutton.style.display = "block";
+                   } else {
+                     mybutton.style.display = "none";
+                   }
+                 }
+               
+                 function topFunction() {
+                   document.body.scrollTop = 0;
+                   document.documentElement.scrollTop = 0;
+                 }
+                 </script>
+          
+        
+            <!-- -------------------------------------------------------------------------OPEN SIDE BAR--------------------------------------------------------------- -->
+          
+            <div id="mySidenavtetet" class="sidenavtetet">
+              <a style="background-color: #38444d;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="newtab" href="5.CEK KODE HTML.html">Cek Kode HTML</a>
+                <a class="newtab" href="6.CEK KODE CSS.html">Cek Kode CSS</a>
+                <a class="newtab" href="Anggota.html">Anggota</a>
+            </div>
+          
+            <script>
+              function openNav() {
+                document.getElementById("mySidenavtetet").style.width = "250px";
+                document.getElementById("mainnew").style.marginLeft = "250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+              }
+              
+              function closeNav() {
+                document.getElementById("mySidenavtetet").style.width = "0";
+                document.getElementById("mainnew").style.marginLeft= "0";
+                document.body.style.backgroundColor = "white";
+              }
+              </script>
+          
+          <!-- -------------------------------------------------------------------------HEADER--------------------------------------------------------------- -->
+          
+          <div class="header">
+            <h1 class="LUV">Selamat datang di web kita</h1>
+          </div>
+          
+          <!-- -------------------------------------------------------------------------TOP NAV BAR--------------------------------------------------------------- -->
+          
+          
+          <ul class="dropdownlist">
+            <li class="dropdown">
+              <a class="dropbtn">Sosmed</a>
+              <div class="dropdown-content">
+                <a href="https://www.youtube.com/?app=desktop&hl=en" target="_blank">YouTube</a>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://web.facebook.com/?locale=id_ID&_rdc=1&_rdr" target="_blank">Facebook</a>
+                <a href="https://twitter.com/?lang=id" target="_blank">Twitter</a>
+              </div>
+              <li class="dropdown">
+                <div class="headersemua" id="myHeadersemua">
+                  <a class="openbtnsss" onclick="openNav()">Lainnya </a>  
+                </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="music.html">Musik</a>
+            </li>
+            <li class="dropdown">
+              <a class="dropbtn" href="Next Projek.html">Next Project</a>
+            </li>
+            
+          
+          <!-- -------------------------------------------------------------------------MODAL POP UP TOP NAV BAR--------------------------------------------------------------- -->
+          
+            <li style="float: right;" class="dropdown">
+            <a class="dropbtn" id="myBtnmmk"  style="cursor: pointer;">Tentang</a>
+            </li> 
+          </ul>
+          
+          <!-- The Modalcabgb -->
+          <div id="myModalcabgb" class="modalcabgb">
+          
+          <!-- Modalcabgb content -->
+          <div class="modalcabgb-content">
+          <div class="modalcabgb-header">
+          <span class="closegg">&times;</span>
+          <h2>Jadi Gini </h2>
+          </div>
+          <div class="modalcabgb-body">
+          <p>Semua Kodingan yang ada di web ini 80% CTRL + C dan CTRL + V tapi tentu saja tidak akan semudah copy paste, terkadang jika sudah banyak kodingan di web ini akan banyak kodingan yang bertabrakan jika tidak di sesuaikan maka hasil kodingan tersebut akan berantakan atau akan merusak kodingan sebelumnya. Maka dari itu tidak bisa asal copy paste, tapi tetap saja lebih muda copy paste dari pada ngetik sendiri hehhe XD  </p>
+          </div>
+          <div class="modalcabgb-footer">
+          <h2>Thank You :)</h2>
+          </div>
+          </div>
+          
+          </div>
+          
+          <script>
+          // Get the modalcabgb
+          var modalcabgb = document.getElementById("myModalcabgb");
+          
+          // Get the button that opens the modalcabgb
+          var btn = document.getElementById("myBtnmmk");
+          
+          // Get the <span> element that closeggs the modalcabgb
+          var span = document.getElementsByClassName("closegg")[0];
+          
+          // When the user clicks the button, open the modalcabgb 
+          btn.onclick = function() {
+          modalcabgb.style.display = "block";
+          }
+          
+          // When the user clicks on <span> (x), closegg the modalcabgb
+          span.onclick = function() {
+          modalcabgb.style.display = "none";
+          }
+          
+          // When the user clicks anywhere outside of the modalcabgb, closegg it
+          window.onclick = function(event) {
+          if (event.target == modalcabgb) {
+          modalcabgb.style.display = "none";
+          }
+          }
+          </script>  
+          <!-- -------------------------------------------------------------------------CSS--------------------------------------------------------------- -->
+          
+          <div class="row"><!--WARNING-->
+            <div class="leftcolumn"><!--WARNING-->
+              <div class="card"><!--WARNING-->
+                <h1 id="section1">Css (Cascading Style Sheet) </h1><!--WARNING-->
+                <div class="fakeimgs" style="height:auto;"><!--WARNING-->
+                    <div class="di1">
+          <h3>Apa itu Css</h1>
+                      <img style="float: right; height: 450px; width: 400px; margin-left: 5px;" src="PP17.png">
+                      Cascading Style Sheet (CSS) adalah salah satu bahasa pemrograman web yang
+                      digunakan untuk mempercantik halaman web dan mengendalikan beberapa
+                      komponen dalam sebuah web sehingga akan lebih terstruktur dan seragam.
+                      CSS menggunakan selector ( id dan class) untuk menentukan elemen yang akan dimodifikasi atau yang akan diberi sentuhan CSS. Ada tiga teknik metode penulisan CSS, antara lain : 
+                      <p>A.Inline CSS Style</p>
+                      <p>B.Internal CSS Style</p>
+                      <p>C.External CSS Style</p>
+                      <br>
+                      <h3>Sejarah Css</h3>
+                      <p>Nama CSS didapat dari fakta bahwa setiap deklarasi style yang berbeda dapat diletakkan secara berurutan, yang kemudian membentuk suatu hubungan layaknya hubungan ayah-anak (parent-child) pada setiap style. CSS sendiri merupakan sebuah teknologi internet yang direkomendasikan oleh World Wide Web Consortium atau W3C pada tahun 1996. Setelah CSS distandarisasikan, Internet Explorer dan Netscape melepas browser terbaru mereka yang telah sesuai atau paling tidak hampir mendekati dengan standar CSS.</p>
+                      <br>
+                      <h3>Fungsi Css</h3>
+                      <p>CSS dapat kita gunakan dalam mengendalikan ukuran gambar, warna teks, warna tabel, ukuran border, warna border, warna hyperlink, warna mouse over, spasi antar paragraf, spasi antar teks, margin kiri, kanan, atas, bawah, dan parameter lainnya.</p>
+                    <p>CSS bisa juga diartikan sebagai Bahasa style sheet yang digunakan untuk mengatur tampilan dokumen. Dengan adanya CSS memungkinkan kita untuk menampilkan halaman yang sama dengan format yang berbeda.</p>                  
+                  <br>
+                  <h3>Kelebihan Css</h3>  
+                  <p>1.Memisahkan desain dengan konten halaman web.              </p>
+                  <p>2.Mengatur desain seefisien mungkin              </p>
+                  <p>3.Jika kita ingin mengubah suatu tema halaman web, cukup modifikasi pada CSS saja              </p>
+                  <p>4.Menghadirkan sesuatu yang tidak dapat dilakukan oleh HTML              </p>
+                  <p>5.Lebih mudah didownload karena lebih ringan ukuran filenya              </p>
+                  <p>6.Satu CSS dapat digunakan dibanyak halaman web              </p>
+                  <br>
+                  <h3>Deklarasi Css</h3>
+                  <img style="float: right; height: 350px; width: 300px; margin-left: 5px;" src="PP18.png">
+                  <p>Deklarasi CSS adalah aturan atau ketentuan yang ditetapkan terkait elemen tertentu. Deklarasi CSS tidak lain adalah serangkaian kode yang digunakan untuk mengatur elemen-elemen pada dokumen HTML.              </p>
+                <p>1.Selektor</p>
+                <p>Elemen yang hendak diatur</p>
+                <p>2.Properti</p>
+                  <p>Hal apa yang hendak diatur terkait elemen (selektor) yang bersangkutan. Beberapa contoh properti yang tersedia adalah width (lebar), height (tinggi), background (latar belakang), color (warna) dsb              </p>
+                  <p>3.Value</p>
+                  <p>Nilai atau ketentuan yang diberikan untuk properti yang bersangkutan</p>
+                  <p>4.Blok kode</p>
+                  <p>{....} merupakan blok kode, semua konfigurasi didefinisikan di dalam blok kode</p>
+                  <br>
+                  <h3>Cara Penulisan Css Inline</h3>
+                  <img width="100%" height="100%" src="PP19.png">
+                  <br>
+                  <h3>Cara Penulisan Css Internal</h3>
+                  <img width="100%" height="100%" src="PP20.png">
+                  <br>
+                  <h3>Cara Penulisan Css External</h3>
+                  <img width="100%" height="100%" src="PP21.png">
+                  <img width="100%" height="100%" src="PP22.png">
+                </div>
+                </div><!--WARNING-->
+              </div><!--WARNING-->
+          
+          <!-- -------------------------------------------------------------------------MARGIN & PADDING--------------------------------------------------------------- -->
+          
+              <div class="card"><!--WARNING-->
+                <h1 class="text" id="sectionnn2">Margin Dan Padding</h1><!--WARNING-->
+                <div class="fakeimg" style="height:auto;"><!--WARNING-->
+                  <div class="di1">
+                    <h3>Pengenalan</h1>
+                      <p>Margin dan Padding merupakan yang paling banyak digunakan dalam mendesain sebuah website dengan menggunakan CSS. Fungsinya untuk mengatur sisi dalam dan luar dari sebuah element.                  </p>
+                      <br>
+                      <h3>Margin pada Css</h3>
+                      <p>Margin adalah sisi luar dari sebuah element. Jika kita ingin mengatur jarak antar element, maka bias menggunakan sintaks ini. Ada beberapa sisi luar margin , yaitu “margin-top”, “margin-bottom”, “margin-left”, dan “margin-right”                  </p>
+                    <img height="100%" width="100%" src="PP23.png">
+                    <br>
+                    <h3>Padding</h3>
+                    <p>Padding adalah sisi dalam dar sebuah element. Kita bias menggunakan sintaks ini dalam mengatur jarak pada sisi dalam sebuah element. Jenis padding bisa dituliskan “padding-top”, “padding-bottom”, “padding-left”, dan “padding-right”. Apabila hanya mendeklarasikan “padding” saja , maka akan secara otomatis mengatur jarak atas bawah kanan dan kiri.                </p>
+                  <img height="100%" width="100%" src="PP24.png">  
+                    </div>
+                  </div><!--WARNING-->
+              </div><!--WARNING-->
+            
+          <!-- -------------------------------------------------------------------------VIDIO--------------------------------------------------------------- -->
+          
+              <div class="cardvid"><!--WARNING-->
+              <h1 class="text">:3</h2><!--WARNING-->
+              <div class="fakeimgvid"><!--WARNING-->
+                <video class="vid" control loop muted autoplay poster>
+                  <source src="VID1.mp4" type="video/mp4">
+                 </video>
+              </div><!--WARNING-->
+              <p class="text">Hiburan aja hehehe <3</p>
+            </div><!--WARNING-->
+          
+          <!-- -------------------------------------------------------------------------BACKGROUND--------------------------------------------------------------- -->
+          
+          <div class="cardpro"><!--WARNING-->
+          <h1 class="text" id="section3">Background</h2><!--WARNING-->
+          <div class="fakeimg"><!--WARNING-->
+          <div class="di1">
+          <h3>Mengubah background dengan Css</h1>
+            <p>Background pada sebuah halaman website merupakan salah satu bagian yang wajib di desain untuk menghasilkan sebuah halaman website yang menarik dan modern. Background pada sebuah halaman website merupakan salah satu bagian yang wajib di desain untuk menghasilkan sebuah halaman website yang menarik dan modern. 
+          
+              Untuk mengubah background dengan CSS menggunakan properti background pada CSS. Properti background selain bisa digunakan untuk mengubah background body website bisa juga digunakan untuk mengubah background pada sebuah elemen HTML                  </p>
+            <br>
+          <img height="100%" width="100%" src="PP25.png">
+          <br>
+          <br>
+          
+          <img height="100%" width="100%" src="PP26.png">  
+          </div>
+          </div><!--WARNING-->
+          </div><!--WARNING-->
+          
+          <!-- -------------------------------------------------------------------------FORMAT TEXT--------------------------------------------------------------- -->
+          
+          <div class="cardpro"><!--WARNING-->
+          <h1 class="text" id="section4">Format Text</h2><!--WARNING-->
+          <div class="fakeimg"><!--WARNING-->
+          <div class="di1">
+          <h3>Mengatur format text dengan Css</h1>
+            <p>1.Adapun beberapa sintaks CSS yang bisa digunakan dalam mengatur format text diantaranya adalah </p>
+            <p>2.Color : digunakan dalam mengatur warna text.</p>
+            <p>3.Text-align : digunakan untuk mengatur posisi align pada text atau rata text.</p> 
+            <p>          4.Text-decoration : digunakan dalam mengatur dekorasi text, valuenya berupa none untuk membuat text tidak memiliki dekorasi , overline untuk membuat text memiliki garis pada bagian atas text, line-through untuk membuat garis mencoreng pada text, dan underline untuk memuat garis pada bawah text.        </p>          
+            <p>          5.Text-transform : digunakan dala mengatur huruf kapital pada text, value yang bisa digunakan diantaranya adalah uppercase untuk membuat text menjadi huruf besar, lowercase untuk membuat text menjadi huruf kecil dan capitalize untuk membuat huruf awal pada tiap kata menjadi huruf besar.</p>          
+            <P>6.Text-indent : digunakan dalam mengatur jarak Alinea pada text, value yang bisa digunakan adalah pixel dan lainnya sesuai kebutuhan        </P>      
+            <P>7.Text-spacing : digunakan dalam mengatur jarak antar karakter pada text, value yang diisi berupa nilai pixel dan lainnya        </P>          
+            <P>8.Word-spacing : diguanakan dalam mengatur jarak antar kata pada text, value yang diisi juga berupa nilai pixel        </P>          
+            <P>9.Line-height : digunakan dalam mengatur jarak antar baris pada text value yang diisi berupa nilai        </P>          
+            <P>10.Text-shadow : digunakan dalam mengatur efek bayang pada text, value yang diisikan pertama mengisi nilai untuk jarak kiri kanan, dan kedua mangisi jarak atas bawah dan yang ketiga mengisi warna. Contohnya 2px 5px blue.        </P>          
+            <P>11.Vertical-align : digunakan untuk mengatur align dalam bentuk vertikal pada text value yang digunakan adalah left untuk membuat text rata kiri, right untuk rata atas dan center untuk rata tengah.        </P>          
+          <br>
+            <h3>Cara mengatur align dan warna text</h3>
+          <img height="100%" width="100%" src="PP27.png">
+          <br>
+          <BR>
+          <h3>Cara mengatur format text</h3>
+          <img height="100%" width="100%" src="PP28.png">
+          </div>
+          </div><!--WARNING-->
+          </div><!--WARNING-->
+          
+          <!-- ------------------------------------------------------------------------- FLOAT --------------------------------------------------------------- -->
+          
+          <div class="cardpro"><!--WARNING-->
+          <h1 class="text" id="section5">Float</h2><!--WARNING-->
+          <div class="fakeimg"><!--WARNING-->
+          <div class="di1">
+          <h3>Menggunakan Float dalam Css</h3>
+          <p>Teknik Floating pada bagian web design merupakan sebuah kebutuhan yang paling banyak diperlukan. Float berfungsi dalam mengatur letak element secara horizontal. Ada 4 value dalam properti Float</p>
+          <p>1.Right</p>
+          <p>2.Left</p>
+          <p>3.Inherit</p>
+          <p>4.None</p>
+          <br>
+          <h3>Contoh</h3>
+          <img height="100%" width="100%" src="PP28.png">
+          </div>
+          </div><!--WARNING-->
+          </div><!--WARNING-->
+          
+          <!-- ------------------------------------------------------------------------- FORM --------------------------------------------------------------- -->
+          
+          <div class="cardpro"><!--WARNING-->
+          <h1 class="text" id="section6">Form</h2><!--WARNING-->
+          <div class="fakeimg"><!--WARNING-->
+          <div class="di1">
+          <h3>Mengidentifikasi Anatomi Form</h3>
+          <p>Form merupakan salah satu bentuk halaman web yang digunakan untuk menerima masukan dari pengguna, untuk selanjutnya masukan dari pengguna tersebut diolah menggunakan bahasa pemrograman web
+          Form dapat digunakan untuk berbagai keperluan seperti keperluan login, transaksi penjualan, mengumpulkan informasi atau meminta umpan balik dari pengguna, menawarkan barang/jasa secara on-line dan sebagainya.</p>
+          <br>
+          <h3>Contoh</h3>
+          <img height="100%" width="100%" src="PP28.png">
+          <br>
+          <br>
+          <h3>Perhatikan Vidio Berikut</h3>
+          
+          <video controls height="100%" width="100%">
+          <source src="VID10.mp4" type="video/mp4">
+          </video>
+          
+          
+          </div>
+          </div><!--WARNING-->
+          </div><!--WARNING-->
+          
+          <!-- ------------------------------------------------------------------------- HYPERLINK --------------------------------------------------------------- -->
+          
+          <div class="cardpro"><!--WARNING-->
+          <h1 class="text" id="section7">Hyperlink</h2><!--WARNING-->
+          <div class="fakeimg"><!--WARNING-->
+          <div class="di1">
+          <h3>Mengautr Hyperlink dengan Css</h3>
+          <p>Hyperlink merupakan link yang dibuat untuk mengalihkan halaman saat diklik. Hyperlink atau link dibuat dengan menggunakan tag &lt;a&gt; dan diakhiri dengan tag &lt;/a&gt; pada HTML. Untuk mempercantik hyperlink bisa menggunakan CSS.     </p>
+          <br>
+          <H3>Ada empat status yang dimiliki oleh hyperlink html dan dapat dimanipulasi dengan CSS, yaitu :  </H3>
+          <p>1.Link = Merupakan Link aktif biasa</p>
+          <p>2.Visited = Merupakan status sebuah link yang telah dikunjungi    </p>
+          <p>3.Hover = Merupakan status sebuah link pada saat diletakkan cursor mouse di atasnya    </p>
+          <p>4.Active = Merupakan status sebuah link atau hyperlink pada saat sudah diklik.    </p>
+          <br>
+          <h3>Dalam penggunaan hyperlink menurut statusnya dapat ditulis dengan sintaks:</h3>
+          <p>1.a:link = untuk link biasa</p>
+          <p>2.a:visited = merupakan status link yang telah dikunjungi</p>
+          <p>3.a:hover = merupakan status sebuah link pada saat diletakkan cursor mouse di atasnya.</p>
+          <p>4.a:active = merupakan status sebuah link atau hyperlink pada saat sudah di klik.</p>
+          <br>
+          <h3>Contoh</h3>
+          <img height="100%" width="100%" src="PP30.png">
+          <img height="100%" width="100%" src="PP31.png">
+          <img height="100%" width="100%" src="PP32.png">
+          </div>
+          </div><!--WARNING-->
+          </div><!--WARNING-->
+          
+          </div> <!--ISTIMEWA-->
+          
+          <!-- -------------------------------------------------------------------------RANDOM LINK--------------------------------------------------------------- -->
+          
+            <div class="rightcolumn">
+              <div class="cardhori">
+                <h1 class="text">Daftar Isi</h1>
+                <div class="daftarisii">
+                  <p class="daftarisis"><a class="daftarisi" onclick="scrollToSection('section1')">1.Css</a></p>
+                  <p class="daftarisis"><a class="daftarisi" onclick="scrollToSection('sectionnn2')">2.Margin dan Padding</a></p>
+                  <p class="daftarisis"><a class="daftarisi" onclick="scrollToSection('section3')">3.Background</a></p>
+                  <p class="daftarisis"><a class="daftarisi" onclick="scrollToSection('section4')">4.Format text</a></p>
+                  <p class="daftarisis"><a class="daftarisi" onclick="scrollToSection('section5')">5.Float</a></p>
+                  <p class="daftarisis"><a class="daftarisi" onclick="scrollToSection('section6')">6.Form</a></p>
+                  <p class="daftarisis"><a class="daftarisi" onclick="scrollToSection('section7')">7.Hyperlink</a></p>
+                </div>
+          
+              <script>
+                  function scrollToSection(sectionId) {
+                      const section = document.getElementById(sectionId);
+                      section.scrollIntoView({ behavior: 'smooth' });
+                  }
+              </script>
+              </div>
+          
+          <!-- -------------------------------------------------------------------------POPULAR POST--------------------------------------------------------------- -->
+          
+              <div class="card">
+                <h1>Hungry cat</h1>
+          
+                <span style="cursor: grab;" onclick="myalertporno()">
+                <div id="getar" class="gallery">
+                <img id="pasmarah" src="PP34.jpeg" alt="Cinque Terre" width="100%" height="100%">
+              </span>
+                </div>
+              </div>
+          
+              <script>
+          function myalertporno() { 
+          
+                var getar = document.getElementById('getar');
+                var pasmarah = document.getElementById('pasmarah')
+                
+                alert("DONTTT TOUCH MY FOODD >_<"); 
+                getar.style.animation='shake 1s';
+                getar.style.animationIterationCount='infinite';
+                getar.style.borderRadius='1000px';
+                pasmarah.src="PP35.jpg";
+              }
+          
+            </script>
+          
+          <!-- -------------------------------------------------------------------------CUTENESS--------------------------------------------------------------- -->
+          
+          
+          <div class="card">
+          <h1>Random Vidio</h1>
+          <video autoplay muted loop id="myVideo" width="100%" height="100%">
+          <source src="VID9.mp4" type="video/mp4">
+          </video>
+        </div>
+          
+          <!-- -------------------------------------------------------------------------CUTENESS--------------------------------------------------------------- -->
+          
+          <div class="card">
+          <h2>Coba Keberuntungan?</h2>
+          <div class="parent">
+          <button class="luck" onclick="document.getElementById('demo').innerHTML = getRndInteger(1,10)">Dapetin No 10</button>
+          
+          <p style="font-weight: bolder; font-size: 50px;" id="demo"></p>
+          
+          <script>
+          function getRndInteger(min, max) {
+          return Math.floor(Math.random() * (max - min + 1) ) + min;
+          }
+          </script>
+          </div>
+          
+          </div>
+          
+        <!-----------------------------------------------------------------------------------BUNDIR---------------------------------------------- -->
+        
+          <div class="card">
+            <h1>Jangan di teken!!!</h1>
+            <div class="bundir">
+        
+              <button id="bundirr" class="buttonbundir" onclick="duadua()">Jangan Di Pencet</button>
+              <script>
+                function duadua(){
+                   var bundirr = document.getElementById('bundirr');
+                   var bundirr = document.write('BATU PARAH');
+                }
+               
+              </script>
+            
+            </div>
+            </div>
+        
+        
+          <!-- -------------------------------------------------------------------------PESAN--------------------------------------------------------------- -->
+          
+              <div class="card">
+                <h3 style="color: #38444d;">Pesan dari yang punya :)</h3>
+                <p style="font-family: sans-serif; color: #38444d;"><strong>Jadi begini hasil kegabutan yang ku buat selama jam pelajaran. Ya aku tau ini memang tidak jelas tapi se engganya aku jelas, ini aku lakukan sebisa ku salam hangat -LIA</strong></p>
+              </div>
+            </div>
+          </div>
+          <br>
+          
+          <!-- -------------------------------------------------------------------------FOOTER--------------------------------------------------------------- -->
+          
+          <footer class="footer">
+          <div class="containerppllkkoo">
+          <div class="footer_inner">
+          <div class="c-footer">
+            <div class="layoutccvvee">
+              <div class="layoutccvvee_item w-50">
+                <div class="newsletter">
+                  <h3 class="newsletter_title">Sudahlah itu aja gak ada yang lain, thanks you :D</h3>
+                  <form class="dedi" action="">
+                    <input class="hentai" type="text" placeholder="Growtamvans@gmail.com ">             
+                  </form>
+                </div>
+              </div>
+              <div class="layoutccvvee_item w-25">
+                  <video autoplay muted loop src="VID7.mp4" width="180%" height="120%">
+                  </video>
+              </div>          
+            </div>
+            <div class="layoutccvvee c-2">
+              <div class="layoutccvvee_item w-25">
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="footer_copyright">
+          <p>&copy; 2024 The SRT Company Inc.</p>
+          </div>
+          </div>
+          </footer>
+          
+          </div>
+          </div>
+          </body>
+          </html>
+          
+          
+
+
+    </xmp>
+</body>
+</html>

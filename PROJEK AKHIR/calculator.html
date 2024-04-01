@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="WEBICON7.jpg"><!--ICON WEBSITE-->
+    <style>
+
+.buttononlymyweb {
+    margin-top: 40px;
+    margin-left: 30px;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #38444d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px lightslategray;
+}
+
+.buttononlymyweb:hover {
+    background-color: lightslategray;
+    box-shadow: 0 9px #38444d;
+}
+
+.buttononlymyweb:active {
+  background-color: lightslategrey;
+  box-shadow: 0 5px #38444d;
+  transform: translateY(4px);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* author: https://codepen.io/Bazhov/pen/BaqKOZb
+Abdulloh */
+
+body{
+    transition: background-color 1s ease; /* Efek transisi selama 1 detik wajib di body*/
+    overflow: hidden;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:consolas;
+   } 
+  .calcu{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+   }
+  .dark{
+      background: lightslategray;
+  }
+  .calculator{
+    position:relative;
+    width:340px;
+    padding:20px;
+    border-radius:20px;
+    background: #38444d;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.25),
+      -15px -15px 20px rgba(255,255,255,0.1);
+   }
+  .dark .calculator{
+      background: #33393e;
+      box-shadow: 15px 15px 20px rgba(0,0,0,0.25),
+      -15px -15px 20px rgba(255,255,255,0.1);
+  }
+  .calculator .buttons{
+    position:relative;
+    display:grid;
+    }
+  .calculator .buttons #value{
+      position: relative;
+      grid-column: span 4;
+      user-select: none;
+      overflow: none;
+      height: 100px;
+      width: 100%;
+      text-align: end;
+      color: white;
+      line-height: 100px;
+      box-shadow: inset 15px 15px 20px rgba(0,0,0,0.25),
+      inset -15px -15px 20px rgba(255,255,255,0.1);
+      border-radius: 10px;
+      margin-bottom: 12px;
+      padding: 0px 20px;
+      font-size: 2em;
+      font-weight: 500;
+  }
+  .dark .calculator .buttons #value{
+      color: #eee;
+      box-shadow: inset 15px 15px 20px rgba(0,0,0,0.25),
+      inset -15px -15px 20px rgba(255,255,255,0.1);
+  }
+  .calculator .buttons span{
+    position:relative;
+    padding:10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25),
+      -5px -5px 10px rgba(255,255,255,0.1);
+    margin:10px;
+    cursor:pointer;
+    user-select:none;
+    min-width:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.2em;
+    color: white;
+    border-radius:10px;
+   } 
+  .dark .calculator .buttons span{
+      color: #eee;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.25),
+      -5px -5px 10px rgba(255,255,255,0.1);
+  }
+  .calculator .buttons span:active{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1), 
+   inset -5px -5px 20px #fff;
+    color:#f44336;
+   } 
+  .dark .calculator .buttons span:active{
+      box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+      inset -5px -5px 10px #fff;
+  }
+  .calculator .buttons span#clear{
+    grid-column:span 2;
+    background:#f44336;
+    color:#fff;
+   } 
+  .calculator .buttons span#plus{
+    grid-row:span 2;
+    background:#31a935;
+    color:#fff;
+   } 
+  .calculator .buttons span#equal{
+    grid-row:span 2;
+    background:#2196f3;
+    color:#fff;
+   } 
+  .calculator .buttons span#clear:active, 
+  .calculator .buttons span#plus:active, 
+  .calculator .buttons span#equal:active{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1)
+
+  } 
+  .dark .calculator .buttons span#clear:active,
+  .dark .calculator .buttons span#plus:active,
+  .dark .calculator .buttons span#equal:active{
+      box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1)
+  }
+  .toggleBtn{
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: #edf1f4;
+      cursor: pointer;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.25),
+      -5px -5px 10px rgba(255,255,255,0.25);
+  }
+  .dark .toggleBtn{
+      background: #edf1f4;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.25),
+      -5px -5px 10px rgba(255,255,255,0.25);
+  }
+    </style>
+</head>
+<body>
+    <button class="buttononlymyweb"><a href="Core.html">Kembali</a></button>
+    <div class="calcu">
+<div class="calculator">
+  <div class="buttons">
+    <h2 id="value"></h2>
+    <span id="clear">Clear</span>
+    <span>/</span>
+    <span>*</span>
+    <span>7</span>
+    <span>8</span>
+    <span>9</span>
+    <span>-</span>
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>
+    <span id="plus">+</span>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>0</span>
+    <span>00</span>
+    <span>.</span>
+    <span id="equal">=</span>
+  </div>
+</div>
+</div>
+
+<script>
+
+function getRandomColor() {
+            var letters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = getRandomColor();
+            setTimeout(changeBackgroundColor, 200);
+        }
+
+        changeBackgroundColor();
+
+  let buttons = document.querySelector('.buttons');
+        let btn = document.querySelectorAll('span');
+        let value = document.getElementById('value');
+        let toggleBtn =document.querySelector(".toggleBtn");
+        let body = document.querySelector('body');
+        for(let i=0; i<btn.length;i++){
+            btn[i].addEventListener("click", function(){
+                if(this.innerHTML=="="){
+                    value.innerHTML = eval(value.innerHTML);
+                }else{
+                    if(this.innerHTML=="Clear"){
+                        value.innerHTML = "";
+                    }
+                    else{
+                        value.innerHTML += this.innerHTML;
+                    }
+                }
+           })
+        }
+        toggleBtn.onclick = function(){
+            body.classList.toggle('dark')
+        }
+  </script>
+</body>
+</html>

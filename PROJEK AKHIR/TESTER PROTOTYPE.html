@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Thanks</title>
+
+    <style>
+        #specialThanksContainer {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #thanksImage {
+            width: 150px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+        }
+
+        #specialThanksText {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        #name {
+            color: #ff5733; /* Warna merah tua, bisa disesuaikan */
+        }
+    </style>
+</head>
+<body>
+
+<div id="specialThanksContainer">
+    <img id="thanksImage" src="your_image_url.jpg" alt="Special Thanks Image">
+    <p id="specialThanksText">Terima kasih atas dukungan dan kontribusi dari <span id="name">YourName</span></p>
+</div>
+
+<script>
+    // Ambil elemen span dengan id "name"
+    var nameElement = document.getElementById("name");
+
+    // Ganti teks dalam elemen span dengan nama yang diinginkan
+    nameElement.innerText = "YourName";
+</script>
+
+</body>
+</html>

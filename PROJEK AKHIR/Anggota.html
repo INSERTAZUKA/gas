@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="64x64" href="WEBICON7.jpg"><!--ICON WEBSITE-->
+<title>ANGGOTA</title>
+<style>
+html {
+  box-sizing: border-box;
+}
+
+body{
+  transition: background-color 1s ease; /* Animasi perubahan warna selama 1 detik */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  background-color: #38444d;
+}
+
+.container {
+  padding: 0 16px;
+  background-color: #38444d;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: white;
+}
+
+.buttononlymyweb {
+  margin-left: 8px;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #38444d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px lightslategray;
+}
+
+.buttononlymyweb:hover {
+    background-color: lightslategray;
+    box-shadow: 0 9px #38444d;
+}
+
+.buttononlymyweb:active {
+  background-color: lightslategrey;
+  box-shadow: 0 5px #38444d;
+  transform: translateY(4px);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.coba{
+  background-color: white;
+  padding: 10px;
+  padding-top: 20px;
+}
+</style>
+</head>
+<body>
+
+  <script>
+    // Fungsi untuk menghasilkan warna acak dalam format RGB
+    function getRandomColor() {
+        var letters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    // Fungsi untuk mengubah warna latar belakang secara berkala
+    function changeBackgroundColor() {
+        document.body.style.backgroundColor = getRandomColor();
+        setTimeout(changeBackgroundColor, 300); // Ganti warna setiap 3 detik
+    }
+
+    // Panggil fungsi pertama kali untuk memulai perubahan warna
+    changeBackgroundColor();
+</script>
+
+<div class="coba">
+<button class="buttononlymyweb"><a href="Core.html">Kembali</a></button>
+    <br>
+    <br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="PP15.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Muhammad Luthfi Eka Saputra</h2>
+        <p class="title">Pembuat</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="PP37.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Farrel Pahlevi</h2>
+        <p class="title">Pencetus Ide</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="PP13.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Ibrahim Muhammad Nurdin</h2>
+        <p class="title">Pembuat</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
